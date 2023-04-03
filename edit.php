@@ -1,5 +1,8 @@
 
+
 <?php 
+session_start();
+
 $servername = 'localhost';
 $username = 'root';
 $password = '';
@@ -25,7 +28,7 @@ $successMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (!isset($_GET["id"])) {
-        header("location: /php-webshop/index.php");
+        header("location: /php-webshop/admin.php");
         exit;
     }
 
@@ -35,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $result = $connection->query($sql);
 
     if ($result->num_rows == 0) {
-        header("location: /php-webshop/index.php");
+        header("location: /php-webshop/admin.php");
         exit;
     }
 
@@ -65,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $errorMessage = "Invalid query: " . $connection->error;
         } else {
             $successMessage = "The product has now been updated";
-            header("location: /php-webshop/index.php");
+            header("location: /php-webshop/admin.php");
             exit;
         }
     }
@@ -140,7 +143,7 @@ $connection->close();
 
         <div>
             <button type="submit" class="bg-blue-500 py-2 px-3">submit</button>
-            <button class="bg-blue-500 py-2 px-3" href="/php-webshop/index.php" role="button">cancel</button>
+            <button class="bg-blue-500 py-2 px-3" href="/php-webshop/admin.php" role="button">cancel</button>
         </div>
         </form>
     </div>
