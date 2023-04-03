@@ -46,7 +46,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $successMessage = "The product has now been added";
 
-        header("location: /php-webshop/index.php");
+        header("location: /php-webshop/admin.php");
         exit;
 
     } while (false);
@@ -116,7 +116,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <div>
             <button type="submit" class="bg-blue-500 py-2 px-3">submit</button>
-            <button class="bg-blue-500 py-2 px-3" href="/php-webshop/index.php" role="button">cancel</button>
+            <button class="bg-blue-500 py-2 px-3" href="/php-webshop/admin.php" role="button">cancel</button>
         </div>
         </form>
     </div>
