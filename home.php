@@ -1,3 +1,6 @@
+<?php 
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,29 +11,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-        <header>
-        <nav class="flex flex-wrap items-center justify-between w-full absolute py-8 text-lg text-gray-700 px-20">
+<header>
+        <nav class="flex flex-wrap items-center justify-between w-full  py-8 text-lg text-gray-700 px-20">
           <div>
-            <a href="/index.html#top">
+            <a href="index.php">
             <p class="font-semibold text-xl">MySneakers</p>
             </a>
           </div>
             
         <div class="hidden w-full md:flex md:items-center md:w-auto" >
-          <ul class="pt-4 text-base text-gray-100 md:flex md:justify-between md:pt-0 font-semibold text-xl">
-            <li>
-              <a class="md:p-4 py-2 block" href="/index.html#projects">Sneakers</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block" href="/index.html#projects">Support</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block" href="/index.html#about">Login</a>
-            </li>
-              </ul>
+        <ul class="menu">
+      <li>
+        <a href="#">Products</a>
+        <ul class="sub-menu">
+          <li><a href="all_products.php">All</a></li>
+          <li>
+            <a href="#">Brands</a>
+            <ul class="sub-sub-menu">
+              <li>
+                <a href="all_products.php">All</a>
+              </li>
+              <li>
+                <a href="jordans.php">Jordans</a>
+              </li>
+              <li>
+                <a href="nike.php">Nike</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    <li><a href="login.php#">Login</a></li>
+    <li><a href="logout.php#">Logout</a></li>
+  </ul>
             </div>
         </nav>
       </header>
@@ -84,7 +101,7 @@
                     die("Connection failed: " . $connection->connect_error);
                 }
 
-                $sql = "SELECT * FROM products";
+                $sql = "SELECT * FROM products LIMIT 3";
                 $result = $connection->query($sql);
 
                 if (!$result) {
@@ -107,6 +124,11 @@
 </div>
             
     </div>
+
+    <section>
+      <img src="/cover-img-home.png"/>
+    </section>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
                 AOS.init(duration= 3000);
