@@ -128,6 +128,36 @@ session_start();
     <section>
       <img src="/cover-img-home.png"/>
     </section>
+
+    <footer class="bg-black text-white py-8 mt-36">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap justify-between">
+      <div class="w-full lg:w-1/3 mb-8 lg:mb-0">
+        <h2 class="text-lg font-bold mb-4">About Us</h2>
+        <p class="mb-4 pr-8">We are a leading online sneaker store, offering the latest sneakers from top brands at competitive prices.</p>
+        <p><a href="#" class="text-blue-500 hover:text-blue-300">Learn More &rarr;</a></p>
+      </div>
+      <div class="w-full lg:w-1/3 mb-8 lg:mb-0">
+        <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+        <p class="mb-4">123 Main Street<br>Anytown, USA 12345<br>Phone: (123) 456-7890</p>
+        <p><a href="#" class="text-blue-500 hover:text-blue-300">Send Us a Message &rarr;</a></p>
+      </div>
+      <div class="w-full lg:w-1/3 mb-8 lg:mb-0">
+        <h2 class="text-lg font-bold mb-4">Follow Us</h2>
+        <p class="mb-4">Stay up to date with our latest news and promotions.</p>
+        <div class="flex">
+          <a href="index.php" class="text-white hover:text-blue-300 mr-4">Home</i></a>
+          <a href="all_products.php" class="text-white hover:text-blue-300 mr-4">All Products</a>
+          <a href="login.php" class="text-white hover:text-blue-300 mr-4">Login</a>
+          <a href="admin.php" class="text-white hover:text-blue-300">Admin</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+      <p>&copy; 2023 MySneakers. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
