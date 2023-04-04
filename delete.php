@@ -16,6 +16,6 @@ if (isset($_GET["id"])){
     $connection->query($sql);
 }
 
-header("location: /php-webshop/index.php");
+header("location: /php-webshop/admin.php");
 exit;
 ?>
