@@ -124,7 +124,7 @@
         <div class="flex">
           <a href="index.php" class="text-white hover:text-blue-300 mr-4">Home</i></a>
           <a href="all_products.php" class="text-white hover:text-blue-300 mr-4">All Products</a>
-          <a href="login.php" class="text-white hover:text-blue-300 mr-4">Login</a>
+          <a href="admin_login.php" class="text-white hover:text-blue-300 mr-4">Admin Login</a>
           <a href="admin.php" class="text-white hover:text-blue-300">Admin</a>
         </div>
       </div>
