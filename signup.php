@@ -59,7 +59,7 @@ if (isset($_POST["signup"])) {
                 <input class="border border-gray-300 p-2 w-full rounded-md" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
             </div>
             <div class="flex items-center justify-between">
-                <button class="border-2 rounded-full px-3 py-2 border border-black text-lg" type="submit" name="signup">Sign Up</button>
+                <button class="border-2 rounded-full px-3 py-2 border border-black text-lg hover:text-white hover:bg-black" type="submit" name="signup">Sign Up</button>
                 <a class="text-blue-500 hover:text-blue-600 font-medium" href="login.php">Already have an account?</a>
             </div>
         </form>
