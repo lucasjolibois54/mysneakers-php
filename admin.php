@@ -1,10 +1,15 @@
 <?php
-
 session_start();
 
-
-
+if (isset($_SERVER['HTTP_REFERER']) && 
+   (strpos($_SERVER['HTTP_REFERER'], 'http://localhost/php-webshop/admin_login.php') !== false ||
+    strpos($_SERVER['HTTP_REFERER'], 'http://localhost/php-webshop/login.php') !== false)) {
+} else {
+    echo "Restricted Area: requires authentication";
+    exit;
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
